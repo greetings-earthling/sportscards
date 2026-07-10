@@ -60,11 +60,19 @@ function prevPage() {
 }
 
 function zoomPage() {
+
   const lightbox = document.getElementById("lightbox");
+
   const lightboxImage = document.getElementById("lightboxImage");
 
-  lightboxImage.src = document.getElementById("binderImage").src;
-  lightbox.style.display = "flex";
+  lightboxImage.src = pages[currentPage].image;
+
+  lightbox.style.display = "block";
+
+  lightbox.scrollTop = 0;
+
+  lightbox.scrollLeft = 0;
+
 }
 
 document.getElementById("lightbox").onclick = function () {
