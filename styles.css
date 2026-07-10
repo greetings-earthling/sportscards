@@ -175,7 +175,7 @@ button {
 }
 
 .lightbox img {
-  width: 2500px !important;
+  width: 200% !important;
   min-width: 2500px !important;
   max-width: none !important;
   max-height: none !important;
