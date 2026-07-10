@@ -28,40 +28,53 @@ const pages = [
   {
     image: "images/page002.jpg",
     stickers: [
-      { text: "$5", class: "s1" },
-      { text: "/99", class: "s3", color: "blue" },
-      { text: "AUTO", class: "s5", color: "green" }
+      { text: "/10 Gold Press Proof $45", class: "s1", color: "blue" },
+      { text: "RC $8", class: "s2", color: "red"  },
+      { text: "RC $5", class: "s3", color: "red"  },
+      { text: "$5", class: "s4" },
+      { text: "Insert $100", class: "s5", color: "blue"  },
+      { text: "$5", class: "s6" },
+      { text: "$3", class: "s7" },
+      { text: "Insert $20", class: "s8", color: "blue"  },
+      { text: "$3", class: "s9" },
+      
     ],
     cards: [
-      { class: "c1", name: "Page 2, Card 1" },
-      { class: "c2", name: "Page 2, Card 2" },
-      { class: "c3", name: "Page 2, Card 3" },
-      { class: "c4", name: "Page 2, Card 4" },
-      { class: "c5", name: "Page 2, Card 5" },
-      { class: "c6", name: "Page 2, Card 6" },
-      { class: "c7", name: "Page 2, Card 7" },
-      { class: "c8", name: "Page 2, Card 8" },
-      { class: "c9", name: "Page 2, Card 9" }
+      { class: "c1", name: "LaVine 2" },
+      { class: "c2", name: "Shaq 2" },
+      { class: "c3", name: "Herro 2" },
+      { class: "c4", name: "Bird 2" },
+      { class: "c5", name: "Kobe 2" },
+      { class: "c6", name: "Magic 2" },
+      { class: "c7", name: "Duncan 2" },
+      { class: "c8", name: "Wade 2" },
+      { class: "c9", name: "Pippen 2" }
     ]
   },
 
   {
     image: "images/page003.jpg",
     stickers: [
-      { text: "PC", class: "s2", color: "purple" },
-      { text: "RC", class: "s4", color: "red" },
-      { text: "$10", class: "s9" }
+      { text: "Tim Hortons $8", class: "s1" },
+      { text: "$3", class: "s2" },
+      { text: "$3", class: "s3" },
+      { text: "$5", class: "s4" },
+      { text: "$5", class: "s5" },
+      { text: "$3", class: "s6" },
+      { text: "RC $7", class: "s7", color:"red" },
+      { text: "$3", class: "s9" },
+      { text: "$4", class: "s9" },
     ],
     cards: [
-      { class: "c1", name: "Page 3, Card 1" },
-      { class: "c2", name: "Page 3, Card 2" },
-      { class: "c3", name: "Page 3, Card 3" },
-      { class: "c4", name: "Page 3, Card 4" },
-      { class: "c5", name: "Page 3, Card 5" },
-      { class: "c6", name: "Page 3, Card 6" },
-      { class: "c7", name: "Page 3, Card 7" },
-      { class: "c8", name: "Page 3, Card 8" },
-      { class: "c9", name: "Page 3, Card 9" }
+      { class: "c1", name: "Makar 3" },
+      { class: "c2", name: "Tavares 3" },
+      { class: "c3", name: "Malkin 3" },
+      { class: "c4", name: "Lemieux 3,4" },
+      { class: "c5", name: "Lemieux 3,5" },
+      { class: "c6", name: "Federov 3" },
+      { class: "c7", name: "Beaupre 3" },
+      { class: "c8", name: "Carew 3" },
+      { class: "c9", name: "Griffey 3" }
     ]
   }
 ];
