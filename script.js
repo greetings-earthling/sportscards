@@ -9,16 +9,28 @@ function updatePage() {
   const stickerLayer = document.getElementById("stickerLayer");
   stickerLayer.innerHTML = "";
 
-page.stickers.forEach(sticker => {
+  page.stickers.forEach(sticker => {
+
   const div = document.createElement("div");
+
   div.className = `sticker ${sticker.class}`;
-  div.innerText = sticker.text;
 
   if (sticker.color) {
+
     div.classList.add(sticker.color);
+
   }
 
+  div.innerText = sticker.text;
+
+  div.addEventListener("click", () => {
+
+    div.classList.toggle("hidden");
+
+  });
+
   stickerLayer.appendChild(div);
+
 });
 
   makeStickersDraggable();
