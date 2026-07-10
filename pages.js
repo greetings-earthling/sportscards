@@ -3,7 +3,7 @@ const pages = [
     image: "images/page001.jpg",
     stickers: [
       { text: "$2", class: "s1" },
-      { text: "RC", class: "s2" },
+      { text: "RC", color: "red", class: "s2" },
       { text: "$3", class: "s3" },
       { text: "FT", class: "s4" },
       { text: "$1", class: "s5" },
