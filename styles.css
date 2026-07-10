@@ -54,7 +54,29 @@ header p {
   cursor: grab;
   user-select: none;
 }
+.yellow {
+  background: #ffe66d;
+}
 
+.red {
+  background: #ff6b6b;
+}
+
+.blue {
+  background: #7cc6fe;
+}
+
+.green {
+  background: #8ce99a;
+}
+
+.orange {
+  background: #ffb366;
+}
+
+.purple {
+  background: #d0b3ff;
+}
 .s1 { top: 22%; left: 16%; }
 
 .s2 { top: 22%; left: 49%; }
