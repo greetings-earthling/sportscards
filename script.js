@@ -59,6 +59,18 @@ function prevPage() {
   }
 }
 
+function zoomPage() {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.getElementById("lightboxImage");
+
+  lightboxImage.src = document.getElementById("binderImage").src;
+  lightbox.style.display = "flex";
+}
+
+document.getElementById("lightbox").onclick = function () {
+  this.style.display = "none";
+};
+
 function addToWantList(cardName) {
   if (!wantList.includes(cardName)) {
     wantList.push(cardName);
@@ -89,10 +101,12 @@ function renderWantList() {
   wantList.forEach(item => {
     const div = document.createElement("div");
     div.className = "want-item";
+
     div.innerHTML = `
       ${item}
       <button onclick="removeFromWantList('${item}')">Remove</button>
     `;
+
     list.appendChild(div);
   });
 }
@@ -100,7 +114,9 @@ function renderWantList() {
 function copyWantList() {
   if (wantList.length === 0) return;
 
-  const text = "Interested in:\n\n" + wantList.map(item => `- ${item}`).join("\n");
+  const text =
+    "Interested in:\n\n" +
+    wantList.map(item => `- ${item}`).join("\n");
 
   navigator.clipboard.writeText(text);
   alert("Want List copied.");
@@ -110,18 +126,6 @@ function clearWantList() {
   wantList = [];
   saveWantList();
 }
-
-document.getElementById("binderImage").onclick = function () {
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImage = document.getElementById("lightboxImage");
-
-  lightboxImage.src = this.src;
-  lightbox.style.display = "flex";
-};
-
-document.getElementById("lightbox").onclick = function () {
-  this.style.display = "none";
-};
 
 updatePage();
 renderWantList();
