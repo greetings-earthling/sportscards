@@ -128,5 +128,44 @@
     Looking for star rookies, weird 90s inserts, numbered cards, and anything fun.
     Make me an offer.
   </p>
+<script>
+
+  document.querySelectorAll('.sticker').forEach(sticker => {
+
+    sticker.onpointerdown = e => {
+
+      sticker.setPointerCapture(e.pointerId);
+
+      const startX = e.clientX;
+
+      const startY = e.clientY;
+
+      const rect = sticker.getBoundingClientRect();
+
+      sticker.onpointermove = e => {
+
+        sticker.style.left = rect.left + (e.clientX - startX) + 'px';
+
+        sticker.style.top = rect.top + (e.clientY - startY) + 'px';
+
+        sticker.style.right = 'auto';
+
+        sticker.style.bottom = 'auto';
+
+        sticker.style.position = 'fixed';
+
+      };
+
+      sticker.onpointerup = () => {
+
+        sticker.onpointermove = null;
+
+      };
+
+    };
+
+  });
+
+</script>
 </body>
 </html>
