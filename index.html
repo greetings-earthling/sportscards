@@ -6,33 +6,47 @@
   <title>Dennis' Trade Binder</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header>
   <h1>Dennis' Trade Binder</h1>
   <p>A chaotic flip through cards I might trade.</p>
+
+  <p class="instructions">
+    Click page to zoom • Click labels to hide • Click a card to add it to your Want List
+  </p>
 </header>
 
 <main class="binder">
+
   <div class="page">
     <img id="binderImage" src="" alt="Binder page">
+    <div id="cardLayer"></div>
     <div id="stickerLayer"></div>
   </div>
-
-  <div id="lightbox" class="lightbox">
-
-  <img id="lightboxImage">
-
-</div>
 
   <div class="nav">
     <button onclick="prevPage()">← Previous</button>
     <span id="pageNumber">Page 1</span>
     <button onclick="nextPage()">Next →</button>
   </div>
+
 </main>
+
+<section class="wantlist">
+  <h2>Want List</h2>
+  <div id="wantListItems">No cards added yet.</div>
+  <button onclick="copyWantList()">Copy Want List</button>
+  <button onclick="clearWantList()">Clear</button>
+</section>
+
+<div id="lightbox" class="lightbox">
+  <img id="lightboxImage" alt="Zoomed binder page">
+</div>
 
 <script src="pages.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
