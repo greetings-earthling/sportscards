@@ -104,7 +104,7 @@
 
   <main class="binder">
     <div class="page">
-      <img src="binder_sample.jpg" alt="Binder page of baseball cards">
+      <img id="binderImage" src="page1.jpg" alt="Binder Page">
 
       <div class="sticker s1">$2</div>
       <div class="sticker s2">RC</div>
@@ -117,11 +117,15 @@
       <div class="sticker s9">$5</div>
     </div>
 
-    <div class="nav">
-      <button>← Previous</button>
-      <span style="margin: 0 15px;">Page 1</span>
-      <button>Next →</button>
-    </div>
+  <div class="nav">
+
+  <button onclick="prevPage()">← Previous</button>
+
+  <span id="pageNumber" style="margin:0 15px;">Page 1</span>
+
+  <button onclick="nextPage()">Next →</button>
+
+</div>
   </main>
 
   <p class="note">
@@ -165,6 +169,55 @@
     };
 
   });
+
+</script>
+  <script>
+
+const pages = [
+
+  "page1.jpg",
+
+  "page2.jpg",
+
+  "page3.jpg"
+
+];
+
+let currentPage = 0;
+
+function updatePage() {
+
+  document.getElementById("binderImage").src = pages[currentPage];
+
+  document.getElementById("pageNumber").innerText =
+
+    `Page ${currentPage + 1}`;
+
+}
+
+function nextPage() {
+
+  if (currentPage < pages.length - 1) {
+
+    currentPage++;
+
+    updatePage();
+
+  }
+
+}
+
+function prevPage() {
+
+  if (currentPage > 0) {
+
+    currentPage--;
+
+    updatePage();
+
+  }
+
+}
 
 </script>
 </body>
