@@ -54,6 +54,10 @@ header p {
   cursor: grab;
   user-select: none;
 }
+
+.sticker.hidden {
+  opacity: 0.15;
+}
 .yellow {
   background: #ffe66d;
 }
