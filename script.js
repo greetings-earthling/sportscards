@@ -11,24 +11,19 @@ function updatePage() {
   stickerLayer.innerHTML = "";
 
   page.stickers.forEach(sticker => {
-
     const div = document.createElement("div");
-
     div.className = `sticker ${sticker.class}`;
 
-    if (sticker.color) {
-      div.classList.add(sticker.color);
-    }
+    if (sticker.color) div.classList.add(sticker.color);
 
     div.innerText = sticker.text;
 
-    div.addEventListener("click", (e) => {
+    div.addEventListener("click", e => {
       e.stopPropagation();
       div.classList.toggle("hidden");
     });
 
     stickerLayer.appendChild(div);
-
   });
 }
 
@@ -46,17 +41,16 @@ function prevPage() {
   }
 }
 
-const binderImage = document.getElementById("binderImage");
-const lightbox = document.getElementById("lightbox");
-const lightboxImage = document.getElementById("lightboxImage");
-
-binderImage.addEventListener("click", () => {
-  lightboxImage.src = binderImage.src;
-  lightbox.classList.add("open");
-});
-
-lightbox.addEventListener("click", () => {
-  lightbox.classList.remove("open");
-});
-
 updatePage();
+
+document.getElementById("binderImage").onclick = function () {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.getElementById("lightboxImage");
+
+  lightboxImage.src = this.src;
+  lightbox.style.display = "flex";
+};
+
+document.getElementById("lightbox").onclick = function () {
+  this.style.display = "none";
+};
