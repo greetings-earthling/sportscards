@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  background: #1f1b18;
+  color: #f4efe7;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+header {
+  padding: 28px 20px 8px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: normal;
+}
+
+header p {
+  color: #c9bda8;
+}
+
+.binder {
+  max-width: 760px;
+  margin: 28px auto;
+  padding: 24px;
+  background: #2b2420;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.5);
+}
+
+.page {
+  position: relative;
+  background: #eee;
+  padding: 18px;
+  border-radius: 8px;
+}
+
+.page img {
+  width: 100%;
+  display: block;
+}
+
+.sticker {
+  position: absolute;
+  background: #ffe66d;
+  color: #111;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 10px;
+  transform: rotate(-8deg);
+  box-shadow: 2px 2px 4px rgba(0,0,0,.25);
+  cursor: grab;
+  user-select: none;
+}
+
+.s1 { top: 8%; left: 8%; }
+.s2 { top: 8%; left: 43%; }
+.s3 { top: 8%; right: 8%; }
+.s4 { top: 40%; left: 8%; }
+.s5 { top: 40%; left: 43%; }
+.s6 { top: 40%; right: 8%; }
+.s7 { bottom: 10%; left: 8%; }
+.s8 { bottom: 10%; left: 43%; }
+.s9 { bottom: 10%; right: 8%; }
+
+.nav {
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  background: #f4efe7;
+  border: 0;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#pageNumber {
+  margin: 0 16px;
+}
