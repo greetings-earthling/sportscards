@@ -57,6 +57,16 @@ header p {
 
 }
 
+.lightbox.open {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
 .lightbox img {
 
   width: 95%;
@@ -81,7 +91,7 @@ header p {
   padding: 8px 10px;
   transform: translate(-50%, -50%) rotate(-8deg);
   box-shadow: 2px 2px 4px rgba(0,0,0,.25);
-  cursor: grab;
+  cursor: pointer;
   user-select: none;
 }
 
