@@ -49,21 +49,29 @@ header p {
   font-weight: bold;
   font-size: 18px;
   padding: 8px 10px;
-  transform: rotate(-8deg);
+  transform: translate(-50%, -50%) rotate(-8deg);
   box-shadow: 2px 2px 4px rgba(0,0,0,.25);
   cursor: grab;
   user-select: none;
 }
 
-.s1 { top: 8%; left: 8%; }
-.s2 { top: 8%; left: 43%; }
-.s3 { top: 8%; right: 8%; }
-.s4 { top: 40%; left: 8%; }
-.s5 { top: 40%; left: 43%; }
-.s6 { top: 40%; right: 8%; }
-.s7 { bottom: 10%; left: 8%; }
-.s8 { bottom: 10%; left: 43%; }
-.s9 { bottom: 10%; right: 8%; }
+.s1 { top: 22%; left: 16%; }
+
+.s2 { top: 22%; left: 49%; }
+
+.s3 { top: 22%; left: 82%; }
+
+.s4 { top: 53%; left: 16%; }
+
+.s5 { top: 53%; left: 49%; }
+
+.s6 { top: 53%; left: 82%; }
+
+.s7 { top: 84%; left: 16%; }
+
+.s8 { top: 84%; left: 49%; }
+
+.s9 { top: 84%; left: 82%; }
 
 .nav {
   margin-top: 20px;
