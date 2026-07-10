@@ -10,12 +10,8 @@
 <body>
 
 <header>
-  <h1>Dennis' Trade Binder</h1>
-  <p>A chaotic flip through cards I might trade.</p>
-
-  <p class="instructions">
-    Click page to zoom • Click labels to hide • Click a card to add it to your Want List
-  </p>
+  <h1>My Trade Binder</h1>
+  <p>A chaotic flip through cards I'd like to trade.</p>
 </header>
 
 <main class="binder">
@@ -26,8 +22,13 @@
     <div id="stickerLayer"></div>
   </div>
 
+  <div class="help">
+    Click labels to hide • Click cards to add to Want List • Use Zoom to inspect cards
+  </div>
+
   <div class="nav">
     <button onclick="prevPage()">← Previous</button>
+    <button onclick="zoomPage()">🔍 Zoom</button>
     <span id="pageNumber">Page 1</span>
     <button onclick="nextPage()">Next →</button>
   </div>
