@@ -170,13 +170,14 @@ button {
   inset: 0;
   background: rgba(0,0,0,.95);
   z-index: 9999;
+  overflow: auto;
   cursor: zoom-out;
-  align-items: center;
-  justify-content: center;
 }
 
 .lightbox img {
-  max-width: 95vw;
-  max-height: 95vh;
-  object-fit: contain;
+  width: 1800px;
+  max-width: none;
+  height: auto;
+  margin: 40px;
+  display: block;
 }
