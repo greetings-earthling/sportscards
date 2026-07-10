@@ -50,6 +50,19 @@ function prevPage() {
   }
 }
 
+const binderImage = document.getElementById("binderImage");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+
+binderImage.addEventListener("click", () => {
+  lightboxImage.src = binderImage.src;
+  lightbox.style.display = "block";
+});
+
+lightbox.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+
 function makeStickersDraggable() {
   document.querySelectorAll(".sticker").forEach(sticker => {
     sticker.onpointerdown = e => {
