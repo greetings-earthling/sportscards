@@ -168,16 +168,18 @@ button {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,.95);
+  background: rgba(0, 0, 0, .95);
   z-index: 9999;
   overflow: auto;
-  cursor: zoom-out;
+  text-align: left;
 }
 
 .lightbox img {
-  width: 1800px;
-  max-width: none;
-  height: auto;
-  margin: 40px;
-  display: block;
+  width: 2500px !important;
+  min-width: 2500px !important;
+  max-width: none !important;
+  max-height: none !important;
+  height: auto !important;
+  margin: 30px;
+  cursor: zoom-out;
 }
