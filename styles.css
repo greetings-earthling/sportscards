@@ -41,6 +41,36 @@ header p {
   display: block;
 }
 
+.lightbox {
+
+  display: none;
+
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0,0,0,.95);
+
+  z-index: 9999;
+
+  cursor: zoom-out;
+
+}
+
+.lightbox img {
+
+  width: 95%;
+
+  height: 95%;
+
+  object-fit: contain;
+
+  display: block;
+
+  margin: auto;
+
+}
+
 .sticker {
   position: absolute;
   background: #ffe66d;
