@@ -77,23 +77,23 @@ header p {
 .purple {
   background: #d0b3ff;
 }
-.s1 { top: 22%; left: 16%; }
+.s1 { top: 24%; left: 16%; }
 
-.s2 { top: 22%; left: 49%; }
+.s2 { top: 24%; left: 50%; }
 
-.s3 { top: 22%; left: 82%; }
+.s3 { top: 24%; left: 84%; }
 
-.s4 { top: 53%; left: 16%; }
+.s4 { top: 55%; left: 16%; }
 
-.s5 { top: 53%; left: 49%; }
+.s5 { top: 55%; left: 50%; }
 
-.s6 { top: 53%; left: 82%; }
+.s6 { top: 55%; left: 84%; }
 
-.s7 { top: 84%; left: 16%; }
+.s7 { top: 86%; left: 16%; }
 
-.s8 { top: 84%; left: 49%; }
+.s8 { top: 86%; left: 50%; }
 
-.s9 { top: 84%; left: 82%; }
+.s9 { top: 86%; left: 84%; }
 
 .nav {
   margin-top: 20px;
