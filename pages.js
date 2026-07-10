@@ -9,7 +9,7 @@ const pages = [
       { text: "$3", class: "s5" },
       { text: "$3 2nd year", class: "s6" },
       { text: "$3", class: "s7" },
-      { text: "$7 2nd year", class: "s8", color: "red" },
+      { text: "$7 2nd year", class: "s8" },
       { text: "$3 2nd year", class: "s9" }
     ],
     cards: [
